@@ -1,187 +1,306 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landscape Page</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    /* Navbar */
-    header {
-      width: 100%;
-      background: #222;
-      color: #fff;
-      padding: 15px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    header .logo {
-      font-size: 22px;
-      font-weight: bold;
-    }
-
-    header nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      transition: 0.3s;
-    }
-
-    header nav ul li a:hover {
-      color: #00bcd4;
-    }
-
-    /* Hero Section */
-    .hero {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 0 20px;
-    }
-
-    .hero h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .hero button {
-      background: #00bcd4;
-      border: none;
-      padding: 15px 30px;
-      color: white;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .hero button:hover {
-      background: #0097a7;
-    }
-
-    /* Features Section */
-    .features {
-      padding: 80px 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      background: white;
-    }
-
-    .feature-box {
-      background: #f1f1f1;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .feature-box:hover {
-      background: #00bcd4;
-      color: white;
-    }
-
-    .feature-box h3 {
-      margin-bottom: 15px;
-    }
-
-    /* Footer */
-    footer {
-      background: #222;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    @media(max-width:768px) {
-      .hero h1 {
-        font-size: 40px;
-      }
-      .hero p {
-        font-size: 16px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Nexus</title>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <div class="logo">MyPortfolio</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <!-- Header -->
+<header>
+  <div class="container">
+    <a class="logo">Nexus</a>
+
+    <!-- Hamburger -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/">About</a>
+      <a href="/">Pages</a>
+      <a href="/">Blogs</a>
     </nav>
-  </header>
+
+    <button class="custom-btn">Free Trial</button>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Create amazing landscapes and modern designs with HTML + CSS</p>
-    <button>Get Started</button>
-  </section>
-
-  <!-- Features Section -->
-  <section class="features">
-    <div class="feature-box">
-      <h3>AI Image Generation</h3>
-      <p>Generate images from text using AI tools.</p>
-    </div>
-    <div class="feature-box">
-      <h3>PDF Generation</h3>
-      <p>Create professional PDFs from your content.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Video Creation</h3>
-      <p>Make videos using text, images, and animations.</p>
-    </div>
-    <div class="feature-box">
-      <h3>Background Removal</h3>
-      <p>Remove image backgrounds instantly.</p>
+    <div class="container">
+      <div class="hero-text">
+        <h1>Mass People<br>Oriented Software</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore. 
+          Odit qui adipisci dolor! Numquam id minima architecto qui ea.
+        </p>
+        <div class="buttons">
+          <button class="btn primary">Get Started</button>
+          <button class="btn secondary">Download</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/home.png" alt="hero">
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 MyPortfolio. All Rights Reserved.</p>
-  </footer>
+  <!-- Section 1 -->
+  <section class="section1">
+    <h1>How It work for you</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    </p>
+
+    <div class="features">
+      <!-- Feature 1 -->
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="img/logo.png"><br>
+          <h2>Stunning Visual</h2>
+        </div>
+        <p>
+          Here, I focus on a range of items and features that we use in life without giving them 
+          a second thought such as Coca Cola.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="img/logo.png"><br>
+          <h2>Stunning Visual</h2>
+        </div>
+        <p>
+          Here, I focus on a range of items and features that we use in life without giving them 
+          a second thought such as Coca Cola.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature">
+        <div class="feature-icon">
+          <img src="img/logo.png"><br>
+          <h2>Stunning Visual</h2>
+        </div>
+        <p>
+          Here, I focus on a range of items and features that we use in life without giving them 
+          a second thought such as Coca Cola.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section2">
+    <div class="functions">
+      <div class="button">
+        <button class="btn">Easy to us</button>
+        <button class="btn">Unlimited Colors</button>
+        <button class="btn">Unique Features</button>
+        <button class="btn">Unique Features</button>
+      </div>
+
+      <div class="function">
+        <div class="funtion-text">
+          <h1>We’ve made a life <br>that will change you</h1>
+          <h3>We are here to listen from you deliver exellence</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp 
+            or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+          </p>
+          <button class="btn-fun">Get Started Now</button>
+        </div>
+        <div class="img-fun">
+          <img src="img/chart.jpg.webp" alt="img3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section3">
+    <div class="funtion2">
+      <div class="function2-text">
+        <h1>Unique Screens that work perfectly</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+      </div>
+      <div class="fun2-image">
+        <img src="img/home.png" alt="img4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Repeat -->
+  <div class="function">
+    <div class="funtion-text">
+      <h1>We’ve made a life <br>that will change you</h1>
+      <h3>We are here to listen from you deliver exellence</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp 
+        or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+      </p>
+      <button class="btn-fun">Get Started Now</button>
+    </div>
+    <div class="img-fun">
+      <img src="img/chart.jpg.webp" alt="img3">
+    </div>
+  </div>
+
+  <!-- Section 4 Pricing -->
+  <section class="section4">
+    <h1>Choose Your Price Plan</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    </p>
+    <div class="blocks">
+      <div class="block">
+        <div class="block-top"><h1>Real Basic</h1></div>
+        <p>
+          2.5 GB Space<br>Secure Online Transfer<br>Unlimited Styles<br>Customer Service
+        </p>
+        <div class="block-btn">
+          <h1>$ 39 Per Month</h1>
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-top"><h1>Real Basic</h1></div>
+        <p>
+          2.5 GB Space<br>Secure Online Transfer<br>Unlimited Styles<br>Customer Service
+        </p>
+        <div class="block-btn">
+          <h1>$ 39 Per Month</h1>
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="block-top"><h1>Real Basic</h1></div>
+        <p>
+          2.5 GB Space<br>Secure Online Transfer<br>Unlimited Styles<br>Customer Service
+        </p>
+        <div class="block-btn">
+          <h1>$ 39 Per Month</h1>
+          <button>Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <div class="feedback-block">
+    <h1>Feedback from Customers</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <div class="feedback-wrapper">
+      <div class="feedback">
+        <div class="feedback-image">
+          <img src="img/Feedback-1.webp" alt="img">
+        </div>
+        <div class="feedback-part">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+          <h2>Mark Alviro Wiens</h2>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <div class="feedback-image">
+          <img src="img/Feedback-2.webp" alt="img">
+        </div>
+        <div class="feedback-part">
+          <p>"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          <h2>Mark Alviro Wiens</h2>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="Demo">
+    <h1> Got Impressed to Our Features</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque officia eaque soluta repellat aut, ipsam provident nobis reprehenderit quos asperiores?</p>
+    <div class="demo-btn"><button>Request Free Demo</button>
+
+    </div>
+  </div>
+<div class="footer">
+  <div class="footer-block">
+    <h1>About Me</h1>
+    <p>
+      Do you want to be even more successful? Learn to love learning and growth.
+      The more effort you put into improving your skills,
+      <br><br>
+      Copyright ©2025 All rights reserved | This template is made with by
+      <a href="">Colorlib</a>
+    </p>
+  </div>
+
+  <div class="footer-block">
+    <h1>Newsletter</h1>
+    <p>Stay updated with our latest trends</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="footer-block">
+    <h1>Follow Us</h1>
+    <p>Let us be social</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- JS -->
+  <script>
+    
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+
+    // Select all buttons with class 'btn'
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Remove active class from all buttons
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        // Add active class to the clicked one
+        button.classList.add("active");
+      });
+    });
+  </script>
 
 </body>
 </html>
